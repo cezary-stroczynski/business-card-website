@@ -44,6 +44,16 @@
             </a>
           </v-col>
         </v-row>
+        <v-row>
+          <v-col cols="auto">
+            <v-icon>mdi-github</v-icon>
+          </v-col>
+          <v-col>
+            <a href="https://github.com/cezary-stroczynski" target="_blank">
+              github.com/cezary-stroczynski
+            </a>
+          </v-col>
+        </v-row>
       </div>
     </v-container>
 

@@ -30,18 +30,18 @@
                   z materiałów online udało mi się opanować takie języki, jak
                   JavaScript i Solidity. Trzy lata później stworzyłem portal
                   crowdfundingowy
-                  <a href="https://fundrzme-beta.herokuapp.com/" target="_blank">Fundrz:me</a>
+                  <a href="https://fundrzme-beta.herokuapp.com/" target="_blank" class="white--text">Fundrz:me</a>
                   wykorzystujący technologię smart-contract sieci
-                  <a href="https://ethereum.org/" target="_blank">Ethereum</a>.
+                  <a href="https://ethereum.org/" target="_blank" class="white--text">Ethereum</a>.
                 </div>
                 <div v-if="language == 'en'">
                   I started learning programming at the beginning of 2017 and by using
                   online resources, I mastered languages such as
                   JavaScript and Solidity. Three years later I created a crowdfunding
                   portal
-                  <a href="https://fundrzme-beta.herokuapp.com/" target="_blank">Fundrz:me</a>
+                  <a href="https://fundrzme-beta.herokuapp.com/" target="_blank" class="white--text">Fundrz:me</a>
                   that uses smart-contract technology of the
-                  <a href="https://ethereum.org/" target="_blank">Ethereum</a> network.
+                  <a href="https://ethereum.org/" target="_blank" class="white--text">Ethereum</a> network.
                 </div>
               </div>
             </v-col>
@@ -52,11 +52,6 @@
   </v-carousel-item>
 </template>
 
-<style lang="css" scoped>
-a {
-  color: white;
-}
-</style>
 
 <script>
 export default {

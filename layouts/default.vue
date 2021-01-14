@@ -10,11 +10,11 @@
         <div class="text-overline grey--text text--darken-1 font-weight-bold">
           Cezary Stroczyński
         </div>
-        <div class="text-caption grey--text">
-          >>>
+        <div class="text-caption grey--text ml-1">
+          >
           <span v-if="language == 'en'">see</span>
           <span v-if="language == 'pl'">zobacz</span>
-          <a href="wp.pl" target="_blank">fundrz:me</a>
+          <a href="https://fundrzme-beta.herokuapp.com/" target="_blank">fundrz:me</a>
         </div>
       </v-toolbar-title>
       <v-spacer>

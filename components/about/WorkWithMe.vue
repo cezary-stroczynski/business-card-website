@@ -19,7 +19,9 @@
             </v-col>
             <v-col>
               <div v-if="language == 'pl'">
-                Jeżeli zainteresował Cię mój portal i chciałbyś się zaangażować
+                Jeżeli zainteresował Cię mój portal
+                <a href="https://fundrzme-beta.herokuapp.com/" target="_blank" class="white--text">Fundrz:me</a>
+                 i chciałbyś się zaangażować
                 w jego rozwój, lub szukasz pracownika i uważasz że świetnie
                 sprawdziłbym się w tej roli,
                 <span
@@ -30,7 +32,9 @@
                 aby uzyskać więcej informacji.
               </div>
               <div v-if="language == 'en'">
-                If you find my crowdfunding portal interesting and you would
+                If you find my
+                <a href="https://fundrzme-beta.herokuapp.com/" target="_blank" class="white--text">Fundrz:me</a>
+                crowdfunding portal interesting and you would
                 like to get involved in its development, or you are looking for
                 an employee and you think that I would be perfect fit for the role
                 <span

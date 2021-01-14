@@ -62,14 +62,14 @@
                   osobistych monet oraz unikatowych, wirtualnych przedmiotów
                   kolekcjonerskich. Portal obecnie znajduje się w fazie testów,
                   możesz zobaczyć go
-                  <a href="https://fundrzme-beta.herokuapp.com/" target="_blank">TUTAJ</a>.
+                  <a href="https://fundrzme-beta.herokuapp.com/" target="_blank" class="white--text">TUTAJ</a>.
                 </div>
                 <div v-if="language == 'en'">
                   The portal uses Nuxt.js framework with an API written in Node.js.
                   It offers features such as creation and sale of personal coins
                   and unique virtual collectibles. The portal is currently in the
                   testing phase, you can see it
-                  <a href="https://fundrzme-beta.herokuapp.com/" target="_blank">HERE</a>.
+                  <a href="https://fundrzme-beta.herokuapp.com/" target="_blank" class="white--text">HERE</a>.
                 </div>
               </div>
             </v-col>
@@ -79,12 +79,6 @@
     </v-card>
   </v-carousel-item>
 </template>
-
-<style lang="css" scoped>
-a {
-  color: white;
-}
-</style>
 
 <script>
 export default {
