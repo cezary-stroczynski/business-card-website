@@ -1,6 +1,28 @@
 <template lang="html">
-  <div class="mx-auto my-15 text-justify max-width">
-    <v-container>
+  <div class="text-justify max-width_element mx-auto">
+    <v-card class="rounded-xl my-10" elevation="10"
+    @click="stopCycle"
+    :ripple="false">
+      <v-carousel
+      class="rounded-xl"
+      :show-arrows="arrows"
+      :cycle="cycle"
+      :interval="5000">
+        <v-carousel-item
+        class="secondary">
+          <v-img src="/profile.jpg" class="mx-auto fill-height" max-width="500"></v-img>
+        </v-carousel-item>
+        <my-inspirations>
+        </my-inspirations>
+        <learning-phase>
+        </learning-phase>
+        <about-fundrzme>
+        </about-fundrzme>
+        <work-with-me>
+        </work-with-me>
+      </v-carousel>
+    </v-card>
+    <!-- <v-container>
       <v-row>
         <v-col align="center">
           <v-img src="/profile.jpg" class="profile-picture rounded-lg mb-15"></v-img>
@@ -38,7 +60,7 @@
             JavaScript i Solidity. Trzy lata później stworzyłem portal
             crowdfundingowy
             <a href="https://fundrzme-beta.herokuapp.com/">Fundrz:me</a>
-            wykorzystujący technologię smart contract sieci
+            wykorzystujący technologię smart-contract sieci
             <a href="https://ethereum.org/">Ethereum</a>.
           </div>
           <div v-if="language == 'en'">
@@ -101,12 +123,29 @@
           </div>
         </v-col>
       </v-row>
-    </v-container>
+    </v-container> -->
   </div>
 </template>
 
+
+
 <script>
+import MyInspirations from '~/components/about/MyInspirations.vue'
+import LearningPhase from '~/components/about/LearningPhase.vue'
+import AboutFundrzme from '~/components/about/AboutFundrzme.vue'
+import WorkWithMe from '~/components/about/WorkWithMe.vue'
+
 export default {
+  components: {
+    MyInspirations,
+    LearningPhase,
+    AboutFundrzme,
+    WorkWithMe,
+  },
+  data: () => ({
+    cycle: true,
+    arrows: false,
+  }),
   computed: {
     language() {
       const polish = this.$store.state.polish
@@ -120,6 +159,11 @@ export default {
   methods: {
     goToContact() {
       this.$store.commit('tab', 2)
+    },
+    stopCycle() {
+      this.cycle = false
+      this.arrows = !this.arrows
+
     }
   }
 }

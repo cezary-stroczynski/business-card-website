@@ -1,16 +1,20 @@
 $material-light: (
   'background': #eceff1,
 );
+$body-font-family: 'Open Sans', sans-serif;
 
-.max-width {
-  max-width: 800px;
+.max-width_element {
+  max-width: 950px;
 }
 
-.profile-picture {
-  max-width: 250px;
-  border: 1px solid #c0c0c0;
+.max-width_txt {
+  max-width: 600px;
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.z-index-1000 {
+  z-index: 1000;
 }

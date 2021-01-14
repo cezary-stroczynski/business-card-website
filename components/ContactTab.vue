@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="mx-3 mx-md-auto my-15 max-width">
+  <div class="mx-3 mx-md-auto my-15 max-width_element">
     <v-container>
       <v-row align="center">
         <v-col cols="auto">
@@ -11,47 +11,74 @@
           </div>
         </v-col>
       </v-row>
-      <v-row>
+      <div class="ml-1">
+
+        <v-row>
+          <v-col cols="auto">
+            <v-icon>mdi-map-marker</v-icon>
+          </v-col>
+          <v-col>
+            <div v-if="language == 'en'">
+              Poznań, Poland
+            </div>
+            <div v-if="language == 'pl'">
+              Poznań, Polska
+            </div>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="auto">
+            <v-icon>mdi-at</v-icon>
+          </v-col>
+          <v-col>
+            cezary.stroczynski@gmail.com
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="auto">
+            <v-icon>mdi-linkedin</v-icon>
+          </v-col>
+          <v-col>
+            <a href="https://www.linkedin.com/in/cezary-stroczynski/" target="_blank">
+              in/cezary-stroczynski
+            </a>
+          </v-col>
+        </v-row>
+      </div>
+    </v-container>
+
+    <v-container class="mt-10">
+      <v-row align="center">
         <v-col cols="auto">
-          <v-icon>mdi-map-marker</v-icon>
+          <v-icon large>mdi-file-code-outline</v-icon>
         </v-col>
         <v-col>
-          <div v-if="language == 'en'">
-            Poznań, Poland
+          <div class="text-h6">
+            Fundrz:me
           </div>
-          <div v-if="language == 'pl'">
-            Poznań, Polska
-          </div>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col cols="auto">
-          <v-icon>mdi-at</v-icon>
-        </v-col>
-        <v-col>
-          cezary.stroczynski@gmail.com
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="auto">
-          <v-icon>mdi-web</v-icon>
-        </v-col>
-        <v-col>
-          <a href="https://fundrzme-beta.herokuapp.com" target="_blank">
-            fundrzme-beta.herokuapp.com
-          </a>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="auto">
-          <v-icon>mdi-linkedin</v-icon>
-        </v-col>
-        <v-col>
-          <a href="https://www.linkedin.com/in/cezary-stroczynski/" target="_blank">
-            /in/cezary-stroczynski
-          </a>
-        </v-col>
-      </v-row>
+      <div class="ml-1">
+
+        <v-row>
+          <v-col cols="auto">
+            <v-icon>mdi-at</v-icon>
+          </v-col>
+          <v-col>
+            fundrzme@gmail.com
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="auto">
+            <v-icon>mdi-link-variant</v-icon>
+          </v-col>
+          <v-col>
+            <a href="https://fundrzme-beta.herokuapp.com" target="_blank">
+              fundrzme-beta.herokuapp.com
+            </a>
+          </v-col>
+        </v-row>
+      </div>
     </v-container>
   </div>
 </template>

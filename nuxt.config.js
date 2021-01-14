@@ -15,7 +15,9 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'},
     ]
   },
 
@@ -50,7 +52,7 @@ export default {
         light: {
           primary: colors.blueGrey,
           accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
+          secondary: '#eeeeee',
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,

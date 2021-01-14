@@ -11,5 +11,5 @@ export const mutations = {
   },
   polish(state, value) {
     state.polish = value
-  }
+  },
 }
