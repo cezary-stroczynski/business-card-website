@@ -18,4 +18,4 @@ $ npm run generate
 ```
 
 This is my business card website. You can find live versions at
-cezary-stroczynski.gitbub.io (with Gitbub Pages)
+cezary-stroczynski.github.io (with Github Pages)

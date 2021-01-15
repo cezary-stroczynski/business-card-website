@@ -3,19 +3,11 @@
     <v-app-bar
     class="white"
     app
-    height="100"
     hide-on-scroll>
       <v-toolbar-title
       class="white">
-        <div class="text-overline grey--text text--darken-1 font-weight-bold">
-          Cezary Stroczyński
-        </div>
-        <div class="text-caption grey--text ml-1">
-          >
-          <span v-if="language == 'en'">see</span>
-          <span v-if="language == 'pl'">zobacz</span>
-          <a href="https://fundrzme-beta.herokuapp.com/" target="_blank">fundrz:me</a>
-        </div>
+        <logo-name>
+        </logo-name>
       </v-toolbar-title>
       <v-spacer>
       </v-spacer>
@@ -32,31 +24,29 @@
   </v-app>
 </template>
 
-<style lang="css" scoped>
-a {
-  text-decoration: none;
-}
-</style>
+
 
 
 <script>
 import AppBarTabs from '@/components/layout/AppBarTabs.vue'
 import SwitchLanguage from '@/components/layout/SwitchLanguage.vue'
+import LogoName from '@/components/layout/LogoName.vue'
 
 export default {
   components: {
     AppBarTabs,
     SwitchLanguage,
+    LogoName,
   },
-  computed: {
-    language() {
-      const polish = this.$store.state.polish
-      if (polish) {
-        return 'pl'
-      } else {
-        return 'en'
-      }
-    },
-  },
+  // computed: {
+  //   language() {
+  //     const polish = this.$store.state.polish
+  //     if (polish) {
+  //       return 'pl'
+  //     } else {
+  //       return 'en'
+  //     }
+  //   },
+  // },
 }
 </script>

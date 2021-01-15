@@ -1,23 +1,17 @@
 <template lang="html">
-  <div class="text-justify max-width_element mx-auto">
+  <div class="text-justify">
     <v-card
-    class="rounded-xl my-10"
     elevation="10"
     @click="stopCycle"
     :ripple="false">
       <v-carousel
+      height="700"
       v-model="carousel"
-      class="rounded-xl"
       :show-arrows="arrows"
       :cycle="cycle"
       :interval="5000">
-        <v-carousel-item
-        class="secondary">
-          <v-img
-          src="profile.jpg" 
-          class="mx-auto fill-height" 
-          max-width="500"></v-img>
-        </v-carousel-item>
+        <my-photo>
+        </my-photo>
         <my-inspirations>
         </my-inspirations>
         <learning-phase>
@@ -34,6 +28,7 @@
 
 
 <script>
+import MyPhoto from '~/components/about/MyPhoto.vue'
 import MyInspirations from '~/components/about/MyInspirations.vue'
 import LearningPhase from '~/components/about/LearningPhase.vue'
 import AboutFundrzme from '~/components/about/AboutFundrzme.vue'
@@ -41,6 +36,7 @@ import WorkWithMe from '~/components/about/WorkWithMe.vue'
 
 export default {
   components: {
+    MyPhoto,
     MyInspirations,
     LearningPhase,
     AboutFundrzme,

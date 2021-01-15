@@ -1,5 +1,5 @@
 <template lang="html">
-  <v-card class="mx-3 mx-md-auto my-15 max-width_txt white pa-10 rounded-lg">
+  <v-card max-width="600" class="mx-3 mx-md-auto my-15 white pa-10 rounded-lg">
     <div>
       <div class="mb-10">
         <div class="text-uppercase mb-3 grey--text text--darken-1 text-body-1">
